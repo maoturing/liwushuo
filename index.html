@@ -1,0 +1,475 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>礼物说</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--图标引用-->
+		<link rel="shortcut icon" href="img\favicon.ico" type="image/x-icon"/>
+		<!--脚本引用-->
+		<script type="text/javascript" src="js\jquery-3.1.0.js"></script>
+		<script type="text/javascript" src="js\jquery-3.0.0.js"></script>
+		<script type="text/javascript" src="js\index.js"></script>
+	  <script type="text/javascript" src="js\bee_nest.js"></script>
+		<script type="text/javascript" src="js\change.js"></script>
+		<script type="text/javascript" src="js\nav-keep.js"></script>
+		<script type="text/javascript" src="js\groupbars.js"></script>
+		<script type="text/javascript" src="js\footer.js"></script>
+		<script type="text/javascript" src="js\login.js"></script>
+		<script type="text/javascript" src="js\show_index.js"></script>
+		<script type="text/javascript" src="js\main.js"></script>
+		<script type="text/javascript" src="js\self_jquery.js"></script>
+		<script type="text/javascript" src="js\like.js"></script>
+		<script src="js/lib/particles.min.js"></script>
+		<!--样式引用-->
+		<link rel="stylesheet" href="css\index.css" />
+	  <link rel="stylesheet" href="css\beenest.css" />
+		<link rel="stylesheet" href="css\item.css" />
+		<link rel="stylesheet" href="css\style.css" />
+		<link rel="stylesheet" href="css\unit.css" />
+		<link rel="stylesheet" href="css\breath.css" />
+	</head>
+	<body>
+	
+      
+		<div class="login-page" hidden="hidden">
+			<div id="login-form-wrap">
+				<form id="login-form" class="clearfix" action="#diandian.com/login" method="post">
+					<div class="input-wrap" id="input-login-email">
+						<span class="input-icon"></span>
+						<input class="login-input-text" type="text" id="litn" name="account" value="enter username?">
+					</div>
+					<div class="input-wrap" id="input-login-pwd">
+						<span class="input-icon"></span>
+						<input class="login-input-text" id="litp" type="text" name="password" value="enter password?">	
+					</div>
+					<input type="button" name="login-submit" class="input-button"  value="登录" />
+				</form>
+			</div>
+		</div>
+		
+	 <!-- particles.js container -->
+    <div id="particles-js"></div>
+    
+  <div class="header_div">
+		<!--头部-->
+		<div class="header">
+			<!--头部左侧-->
+			<div class="head-left">
+				<!--logo块-->
+				<div class="head-logo">
+					<a href="index.html"><img src="img\header-logo.png" /></a>
+				</div>
+				<!--搜索框-->
+				<form class="searchbox" method="get">
+					<input type="text" id="search-input" placeholder="搜索礼物、攻略" />
+					<input type="button" id="search-button" value="搜索" />
+				</form>
+			</div>
+			<!--头部右侧-->
+			<div class="head-right">
+				<div class="bt-login"><a href="#">登录/注册	</a></div>
+			</div>
+			<!--导航栏-->
+			<div class="nav">
+				<!--导航列表-->
+				<ul class="nav-list">
+					<li class="active index"><a href="index.html"><font>首页</font></a></li>
+					<li class="active pitem"><a href="#"><font>赠送对象▼</font></a></li>
+					<li class="active event"><a href="#"><font>赠送场合▼</font></a></li>
+					<li class="active cover"><a href="#"><font>Ta的个性▼</font></a></li>
+					<li class="active phone"><a href="subpage/item/下载手机版.html"><font>下载手机版</font></a></li>
+					<!--这一列隐藏，滚动浏览器显示-->
+					<li>
+						<form>
+							<input type="text" id="search-input-1" placeholder="搜索礼物、攻略" hidden="hidden"/>
+						</form>
+					</li>
+				</ul>
+				<!--二级导航菜单-->
+				<div class="totopnav">
+					<!--赠送对象二级菜单-->
+					<div class="active pitem">
+						<ul>
+							<li><a href="#" class="pitem-1"><font>自己</font></a></li>
+							<li><a href="#" class="pitem-2"><font>男票</font></a></li>
+							<li><a href="#" class="pitem-3"><font>女朋友</font></a></li>
+							<li><a href="#" class="pitem-4"><font>闺蜜们</font></a></li>
+						</ul>
+					</div>	
+					<!--场合二级菜单-->
+					<div class="active event">
+						<ul>
+							<li><a href="#" class="event-1"><font>新年</font></a></li>
+							<li><a href="#" class="event-2"><font>生日</font></a></li>
+							<li><a href="#" class="event-3"><font>纪念日</font></a></li>
+							<li><a href="#" class="event-4"><font>结婚</font></a></li>
+						</ul>
+					</div>
+					<!--特性二级菜单-->
+					<div class="active cover">
+						<ul>
+							<li><a href="#" class="cover-1"><font>美物</font></a></li>
+							<li><a href="#" class="cover-2"><font>手工</font></a></li>
+							<li><a href="#" class="cover-3"><font>吃货</font></a></li>
+							<li><a href="#" class="cover-4"><font>科技范</font></a></li>
+						</ul>
+					</div>
+					<div class="active phone">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+		
+		
+		
+		<div class="大一统div">
+		
+	  	<div class="beenest_div">
+	  		
+	  		<div class="bee_logo" title="breath"><img src="pic/logo.png" id="bee_pic"></div>
+	  		<div class="bee_nest_body">
+	      <!-- 蜂巢特效 -->
+	        <div class="box">
+             <!--(lineFirst)-->
+             <div class="lineF">
+             	  <div class="boxF" id="1">
+                     <div class="boxS">
+                         <div class="boxT" style="background-color: #9A4FB9;background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="2">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/香水盒.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="3">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/link.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--(lineSecond)-->
+             <div class="lineS">
+                 <div class="boxF" id="4">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/相册.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="5">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/超甜系少女礼物.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                              
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="6">
+                     <div class="boxS">
+                         <div class="boxT" style="background-color: #C0392B;background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="7">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/动物.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                              
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+              <!--(lineThird)-->
+             <div class="lineT">
+                 <div class="boxF" id="8">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/礼盒.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="9">
+                     <div class="boxS">
+                         <div class="boxT" style="background-color: #27AE60;background-size:120px 120px;">
+                             <div class="overlay">
+                              
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="10">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/夜灯.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                              
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="11">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/不倒杯.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="12">
+                     <div class="boxS">
+                         <div class="boxT" style="background-color: #34495E;background-size:120px 120px;">
+                             <div class="overlay">
+                              
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--(lineForth)-->
+             <div class="lineIV">
+                 <div class="boxF" id="13">
+                     <div class="boxS">
+                         <div class="boxT" style="background-color: #F78585;background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="14">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/保护壳.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                              
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="15">
+                     <div class="boxS">
+                         <div class="boxT" style="background-color: #F39C12;background-size:120px 120px;">
+                             <div class="overlay">
+                               
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="boxF" id="16">
+                     <div class="boxS">
+                         <div class="boxT" style="background-image: url(pic/高达.jpg);background-size:120px 120px;">
+                             <div class="overlay">
+                              
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+           </div>
+        </div>
+      </div>
+	      
+	   <div class="content_div">
+	     
+	  	<!--中间内容部分-->
+	  	<div class="content">
+	  	      	
+	  	      	<!--轮播模块-->
+	  	      	<div class="banner">
+	  	      		<!--轮播图片引用-->
+	  	      		<div class="index-image">
+	  	      			<img src="img\phone-1.png" class="now" title="photo1" />
+	  	      			<img src="img\phone-2.png" title="photo2" />
+	  	      			<img src="img\phone-3.png" title="photo3" />
+	  	      			<img src="img\phone-4.png" title="photo4" />
+	  	      			<img src="img\phone-5.png" title="photo5" />
+	  	      		</div>
+	  	      		<!--轮播翻页按钮-->
+	  	      		<div class="btn">
+	  	      			<button type="button" class="pre "><img src="img\left.png" /></button>
+	  	      			<button type="button" class="next"><img src="img\right.png" /></button>
+	  	      		</div>
+	  	      		<!--轮播底部块翻页-->
+	  	      		<div class="change">
+	  	      			<ul></ul>
+	  	      		</div>
+	  	      	</div>
+	  	      	<!--筛选框-->
+	  	      	<div class="chose" hidden="hidden">	
+	  	      		<ul class="pitem">
+	  	      			<li><font>赠送对象</font></li>
+	  	      			<li id="all-pitem"><a href="#">全部</a></li>
+	  	      			<li id="self"><a href="#">自己</a></li>
+	  	      			<li id="boy"><a href="#">男票</a></li>
+	  	      			<li id="girl"><a href="#">女朋友</a></li>
+	  	      			<li id="baihe"><a href="#">闺蜜们</a></li>
+	  	      		</ul>			
+	  	      		<ul class="event">
+	  	      			<li><font>赠送场合</font></li>
+	  	      			<li id="all-event"><a href="#">全部</a></li>
+	  	      			<li id="new-year"><a href="#">新年</a></li>
+	  	      			<li id="born"><a href="#">生日</a></li>
+	  	      			<li id="souv"><a href="#">纪念日</a></li>
+	  	      			<li id="jiehun"><a href="#">结婚</a></li>
+	  	      		</ul>
+	  	      		<ul class="cover">
+	  	      			<li><font>Ta的个性</font></li>
+	  	      			<li id="all-cover"><a href="#">全部</a></li>
+	  	      			<li id="beautiful"><a href="#">美物</a></li>
+	  	      			<li id="do-it"><a href="#">手工</a></li>
+	  	      			<li id="eat"><a href="#">吃货</a></li>
+	  	      			<li id="keji"><a href="#">科技范</a></li>
+	  	      		</ul>
+	  	      	</div>
+	  	      	
+	  	      	<!--攻略精选-->
+	  	      	<div class="gongluejingxuan">
+	  	      		<!--一个item-->
+	  	      		<div class="show-square pitem-girl">
+	  	      			<a href="subpage\item\超甜系少女礼物.html"><img src="img\pitem-1.png" /></a>
+	  	      			<div class="small-icon">		
+	  	      				<img src="img/like.png" id="like1"/><font id="num1">2304</font>       
+	  	      				<img src="img/comment.png"/><font>3</font>
+	  	      				<img src="img/share.png" /><font>453</font>
+	  	      			</div>
+	  	      		</div>
+	  	      		<!--一个item-->
+	  	      		<div class="show-square">
+	  	      			<a href="subpage\item\数码体验馆.html"><img src="img\pitem-3.png" /></a>
+	  	      			<div class="small-icon">		
+	  	      				<img src="img/like.png" id="like2"/><font id="num2">366</font>
+	  	      				<img src="img/comment.png"/><font>2</font>
+	  	      				<img src="img/share.png" /><font>47</font>
+	  	      			</div>
+	  	      		</div>
+	  	      		<!--一个item-->
+	  	      		<div class="show-square">
+	  	      			<a href="subpage\item\异地恋保鲜指南.html"><img src="img\pitem-2.png" /></a>
+	  	      			<div class="small-icon">		
+	  	      				<img src="img/like.png" id="like3"/><font id="num3">332</font>
+	  	      				<img src="img/comment.png"/><font>2</font>
+	  	      				<img src="img/share.png" /><font>68</font>
+	  	      			</div>
+	  	      		</div>
+	  	      		<div class="show-square">                                      
+	  	      			<a href="#"><img src="img\event-1.png" /></a>        
+	  	      			<div class="small-icon">		                         
+	  	      				<img src="img/like.png" id="like4"/><font id="num4">30157</font>       
+	  	      				<img src="img/comment.png"/><font>44</font>        
+	  	      				<img src="img/share.png" /><font>1162</font>       
+	  	      			</div>                                               
+	  	      		</div>                                                 
+	  	      		<div class="show-square">                              
+	  	      			<a href="#"><img src="img\event-2.png" /></a>        
+	  	      			<div class="small-icon">		                         
+	  	      				<img src="img/like.png" id="like5"/><font id="num5">25126</font>       
+	  	      				<img src="img/comment.png"/><font>11</font>        
+	  	      				<img src="img/share.png" /><font>709</font>        
+	  	      			</div>                                               
+	  	      		</div>                                                 
+	  	      		<div class="show-square">                              
+	  	      			<a href="#"><img src="img\event-3.png" /></a>        
+	  	      			<div class="small-icon">		                         
+	  	      				<img src="img/like.png" id="like6"/><font id="num6">27761</font>       
+	  	      				<img src="img/comment.png"/><font>7</font>         
+	  	      				<img src="img/share.png" /><font>728</font>        
+	  	      			</div>                                               
+	  	      		</div>                                                 
+	  	      		<div class="show-square">                              
+	  	      			<a href="#"><img src="img\cover-1.png" /></a>        
+	  	      			<div class="small-icon">		                         
+	  	      				<img src="img/like.png" id="like7"/><font id="num7">27032</font>       
+	  	      				<img src="img/comment.png"/><font>25</font>        
+	  	      				<img src="img/share.png" /><font>1225</font>       
+	  	      			</div>                                               
+	  	      		</div>                                                 
+	  	      		<div class="show-square">                              
+	  	      			<a href="#"><img src="img\cover-2.png" /></a>        
+	  	      			<div class="small-icon">		                         
+	  	      				<img src="img/like.png" id="like8"/><font id="num8">35326</font>       
+	  	      				<img src="img/comment.png"/><font>101</font>       
+	  	      				<img src="img/share.png" /><font>2107</font>       
+	  	      			</div>                                               
+	  	      		</div>                                                 
+	  	      		<div class="show-square">                              
+	  	      			<a href="#"><img src="img\cover-3.png" /></a>        
+	  	      			<div class="small-icon">		                         
+	  	      				<img src="img/like.png" id="like9"/><font id="num9">33921</font>       
+	  	      				<img src="img/comment.png"/><font>97</font>        
+	  	      				<img src="img/share.png" /><font>1601</font>       
+	  	      			</div>                                               
+	  	      		</div>                                                 
+	  	      	</div>
+	  	      	
+	  	      	<!--右侧底部-->
+	  	      	<!-- 二维码 -->
+	  	      	<div>
+	  	      		<div class="qr-code">
+	  	      			<img src="img/qrcode.png">
+	  	      		</div>
+	  	      		
+	  	      		<!-- 三个滚动图标 -->
+	  	      		<ul class="groupbars">
+	  	      			<div class="groupbar groupbar-1">
+	  	      				<li class="arrow" id=""><a href="#"><img src="img/arrow.png" /></a></li>
+	  	      				<li class="arrow-on" id=""><a href="#"><img src="img/arrow-on.png" /></a></li>
+	  	      			</div>
+	  	      			<div class="transform">
+	  	      				<li class="groupbar groupbar-2"><img src="img/app.png"></li>
+	  	      			</div>
+	  	      			<li class="groupbar"><img src="img/feedback.png"></li>
+	  	      		</ul>
+	  	      	</div>
+	            <!-- 底部 -->
+	  	        <div class="footer">
+	  	      	<!--友情链接-->
+	  	      	  <div class="copyright">
+	  	      		<font>© 2014 - 2016 Liwushuo.com 北京礼品说科技有限公司 电信与信息服务业务经营许可证150653号 京ICP备15031023号-1 </font><br />
+	  	      		<a href="#"><font>首页</font></a>|
+	  	      		<a href="#"><font>商务合作</font></a>|
+	  	      		<a href="#"><font>关于我们</font></a>|
+	  	      		<a href="#"><font>WindowsPhone版下载</font></a>
+	  	      		<font>电话：010-57510218</font>
+	  	      	  </div>
+	  	        </div>
+	    </div>
+	   </div>
+	   
+   </div>
+		
+		<!-- scripts -->
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+		<!-- 背景音乐 -->
+		<audio src="music/darling.mp3"  autoplay="autoplay" >
+		</audio> 
+		
+	</body>
+</html>

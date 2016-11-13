@@ -1,0 +1,120 @@
+﻿body, div, img, ul, li
+        {
+            margin: 0;
+            padding: 0;
+        }
+ /*
+        body
+        {
+            font-size: 12px;
+            background-color: #DDD;
+            min-width: 1200px;
+        }
+ */
+        .clear{
+            clear: both;
+          }       
+        .box{
+            position: relative;
+            height:400px;
+            width: 630px;
+            margin-left:225px;
+            //background-color:blue;
+            //border:1px solid red;
+            padding-left:250px;
+            //transform:2s;
+          }
+        .lineF, .lineS, .lineT, .lineIV, .lineV{
+            position: absolute;
+            visibility: hidden;
+          }
+        .lineS{
+            top: 90px;
+            left: 200px;
+          }
+         .lineT{
+            top: 180px;
+            left: 150px;
+          }
+         .lineIV{
+         	  top: 270px;
+            left: 200px;
+          }
+      
+        .boxF, .boxS, .boxT, .overlay{
+            width: 80px;
+            height: 125px;
+            overflow: hidden;
+        }
+        .boxF, .boxS
+        {
+            visibility: hidden;
+        }
+        .boxF
+        {   
+        	  transition:transform 1s;
+            transform: rotate(120deg); 
+            float: left;
+            margin-left: 20px;
+            -ms-transform: rotate(120deg);
+            -moz-transform: rotate(120deg);
+            -webkit-transform: rotate(120deg);
+        }
+        .boxS
+        {
+            transform: rotate(-60deg);
+            -ms-transform: rotate(-60deg);
+            -moz-transform: rotate(-60deg);
+            -webkit-transform: rotate(-60deg);
+        }
+        .boxT
+        {
+            transform: rotate(-60deg);
+            background: no-repeat 50% center;
+            background-size: 125% auto;
+            -ms-transform: rotate(-60deg);
+            -moz-transform: rotate(-60deg);
+            -webkit-transform: rotate(-60deg);
+            visibility: visible;
+        }
+        .overlay
+        {
+            transition: all 500ms ease-in-out 0s;
+            display: block;
+            position: relative;
+        }
+        .boxF:hover{
+        
+            transform: scale(1.5,1.5);
+        
+        	}
+        .rotate{
+        	transform: rotateX(180deg);
+        	}      
+        
+        .overlay:hover
+        {
+            background-color: rgba(0,0,0,0.6);
+        }
+        .boxT:hover .overlay
+        {
+            display: block;
+        }
+        .overlay a
+        {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -16px 0 0 -16px;
+            border-radius: 3px;
+            background-color: #d3b850;
+            text-align: center;
+            line-height: 32px;
+            width: 32px;
+            height: 32px;
+            text-decoration: none;
+            color: White;
+            font-size: 18px;
+            font-weight: bolder;
+        }

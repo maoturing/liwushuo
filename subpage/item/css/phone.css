@@ -1,0 +1,79 @@
+	html,body{
+		width:100%;
+	}
+    .tu1{
+	margin-left:-300px;
+	border:0px solid red;
+	float:left;
+	}
+	.tu2{
+	text-align:center;
+	}
+	.button1{
+	width:220px;
+	height:50px;
+	color:#FFFFFF;
+	font-size:24px;
+	text-align:center;
+	border-radius:7px;
+	float:left;
+		}
+	#xia1{
+	position:relative;
+    top: 175px;
+    right: -216px;
+
+	background-color:#34B2FC;
+	border-style:none;
+	}
+	#xia2{
+	position:absolute;
+	top: 200px;
+    right: 121px;
+	background-color:#60C33A;
+	border-style:none;
+	}
+	#xia3{
+	position:absolute;
+	top:1225px;
+	right:180px;
+	background-color:#F84E4E;
+	}
+	
+	#xia4{
+	position:absolute;
+	top:1272px;
+	right:180px;
+	background-color:#F84E4E;
+	}
+	
+	#er{
+	position:absolute;
+	top:2451px;
+	right:600px;
+	}
+	#xia1:hover{
+	color:#0000FF;
+	}
+	#xia2:hover{
+	color:#33FF00;
+	}
+	#xia3:hover{
+	color:#FF0000;
+	}
+	#xia4:hover{
+	color:#FF0000;
+	}
+	
+	/* 下载的字体 */
+.button1 font{
+	font-size:16px;
+	font-family:"Microsoft YaHei";
+	color:white;
+	line-height:1.5;
+	}
+.dowload{
+	background:url("../image/phone-1.png") no-repeat center 0;
+	height:483px;
+	width:100%;
+}

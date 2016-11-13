@@ -1,0 +1,492 @@
+/*=样式初始化*/
+*{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+li a{
+	text-decoration:none;
+}
+font{
+	color:black;
+	font-size:16px;
+}
+html{
+	width:100%;
+	min-height:100%;
+	overflow-x:hidden;
+}
+/*=设置头部宽高*/
+.header{
+	width:100%;
+	height:124px;
+}
+/*=头部左侧样式 浮动*/
+.header .head-left {
+	float:left;
+	margin-left:190px;
+	width:800px;
+}
+/*=头部左侧logo标签样式 浮动*/
+.head-left .head-logo a{
+	float:left;
+	margin-top:28px;
+	width:260px;
+}
+/*=头部左侧搜索块样式*/
+.searchbox{
+	margin-top:12px;
+	margin-left:380px;
+	width:400px;
+	height:60px;
+	position:absolute;
+}
+/*=头部左侧搜索框样式*/
+.searchbox #search-input{
+	border: solid #f84e4e 2px;
+	margin-left:20px;
+	margin-top:14px;
+	width:360px;
+	height:33px;
+	position:absolute;
+}
+.searchbox #search-button{
+	background: #f84e4e;
+    width: 81px;
+    height: 34px;
+	border:0;
+    border-radius: 0 4px 4px 0;
+	right:14px;
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+}
+.header .head-right{
+	float:left;
+	margin-left:75px;
+	margin-top:26px;
+	width: 100px;
+    height: 84px;
+}
+/*=头部右侧样式 浮动*/
+.head-right .bt-login{
+	position: absolute;
+	line-height:36px;
+    width: 100px;
+    height: 36px;
+	background-color:#f9f9f9;
+	border:solid 1px #d9d9d9;
+	text-align:center;
+}
+
+/*=头部导航栏*/
+.header  .nav{
+	float:left;
+	margin-top:85px;
+	width: 100%;
+    height: 39px;
+	background-color:#f84e4e;
+	position:absolute;
+}
+/*=头部导航列表块*/
+.nav .nav-list{
+	margin-left:180px;
+	line-height:39px;
+	text-align:center;
+}
+/*=头部导航块列表*/
+.nav .nav-list li{
+	float:left;
+	width:167px;
+	line-height:39px;
+	text-align:center;
+}
+.nav .nav-list li form #search-input-1{
+	height:28px;
+	line-height:28px;
+}
+/*=头部列表字体设置*/
+.nav .nav-list li  font{
+	width:167px;
+	color:white;
+	color:white;
+	font-weight:bold;
+}
+/*=头部二级导航菜单 赠送对象*/
+.nav .totopnav .pitem{
+	float:left;
+	position:relative;
+	margin-left:346px;
+	margin-top:0px;
+	background-color:white;
+	width:167px;
+	z-index:11111;
+	display:none;
+}
+/*=头部二级导航菜单 赠送场合*/
+.nav .totopnav .event{
+	float:left;
+	position:relative;
+	margin-left:513px;
+	margin-top:0px;
+	background-color:white;
+	width:167px;
+	z-index:11111;
+	display:none;
+}
+/*=头部二级导航菜单 Ta的个性*/
+.nav .totopnav .cover{
+	float:left;
+	position:relative;
+	margin-left:680px;
+	margin-top:0px;
+	background-color:white;
+	width:167px;
+	z-index:11111;
+	display:none;
+}
+/*=头部二级导航菜单赠送对象设置*/
+.pitem ul li{
+	position:relative;
+	margin-left:10px;
+	float:none;
+	width:147px;
+	height:39px;
+	line-height:39px;
+	text-align:center;
+	border-bottom:1px dashed #111;
+}
+/*=头部二级导航菜单设置*/
+.nav .totopnav .active ul li{
+	position:relative;
+	margin-left:10px;
+	float:none;
+	width:147px;
+	height:39px;
+	line-height:39px;
+	text-align:center;
+	border-bottom:1px dashed #111;
+}
+/*=头部二级导航菜单字体设置*/
+.nav .totopnav .active ul li font{
+	width:147px;
+	line-height:39px;
+	text-align:center;
+}
+
+
+.content{
+	width:100%;
+	float:left;
+	//background-color:gray;
+	}
+	
+/* 左侧内容 */
+.left_content{
+	width:755px;
+  margin-top:53px;
+  float:left;
+  //background-color:gray;
+	}
+
+.lc_pic{
+	width:600px;
+	height:328px;
+  //background-color:red;
+	margin-left:155px;
+	}
+
+	
+  /* 图上文字 */
+.pic_text{
+	position:absolute;
+	font-size:34px;
+	color:#252426;
+	font-family:Microsoft YaHei;
+	margin-top:-245px;
+	margin-left:180px;
+	}
+.bt{
+	position:absolute;
+	border:2px solid #1F262B;
+	border-radius:5px;
+	width:98px;
+	height:36px;
+	font-size:18px;
+	font-weight:bold;
+	font-family:Microsoft YaHei;
+	text-align:center;
+	line-height:35px;
+	color:#1F262B;
+	margin-top:-185px;
+	margin-left:240px;
+	}
+.text_on_pic{
+	position:absolute;
+	font-size:27px;
+	font-weight:bold;
+	font-family:"黑体";
+	color:#1F262B;
+	margin-top:-60px;
+	margin-left:20px;
+	}
+	
+  /* 点赞样式 */
+.lc_summary{
+	height:60px;
+	width:100%;
+  //background-color:blue;
+	margin-top:-17px;
+	border-bottom-style:solid;
+	border-color:gray;
+  border-width:1px;
+	}
+.lc_summary ul li{
+	display:block;
+	list-style:none;
+	float:left;
+	padding-right:35px;
+	margin-top:3%;
+	font-family:Microsoft YaHei;
+	}
+.size{
+	width:18px;
+	height:18px;
+	}
+.spc_li a{
+	margin-left:170px;
+	color:gray;
+  }
+  
+  /* 内容展示 */
+.content_show{
+	width:600px;
+	margin-left:155px;
+  //background-color:gray;
+  margin-top:65px;
+}
+.a1{
+	padding-top:20px;
+	font-family:Microsoft YaHei;
+	font-size:20px;
+	}
+.a2{
+	font-family:Microsoft YaHei;
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:10px;
+	}
+.con_pic{
+	width:600px;
+	height:600px;
+  //background-color:gray;
+	}
+.con_price{
+	width:600px;
+	height:38px;
+	margin-top:22px;
+	//background-color:red;
+	border-left-style:solid;
+	border-color:gray;
+	border-width:2px;
+	padding-left:10px;
+	float:left;
+	}
+#p3{
+	margin-top:-1px;
+	color:#F84E4E;
+	font-family:Arial;
+	}
+#p4{
+	font-size:10px;
+	color:gray;
+	line-height:0px;
+	font-family:Arial;
+	}
+.con_txt{
+	float:left;
+	}
+.bt2{
+	border:1px solid #F84E4E;
+	border-radius:2px;
+	width:98px;
+	height:36px;
+	margin-left:420px;
+	font-size:15px;
+	font-weight:solid;
+	font-family:Microsoft-YaHei;
+	text-align:center;
+	line-height:35px;
+	color:#F84E4E;
+  float:left;
+	}
+	
+  /* 评论模块 */
+.summary{
+	margin-top:100px;
+	margin-left:155px;
+	width:600px;
+  //background-color:gray;
+	}
+.each_summary{
+	width:600px;
+	margin-left:-5px;
+	border-top-style:solid;
+	border-color:#CCCCCC;
+	border-width:2px;
+	font-family:Microsoft YaHei;
+	}
+.summary ul li{
+	list-style:none;
+	}
+.pic_and_name{
+	margin-top:20px;
+	width:60px;
+	height:60px;
+	border-radius:30px;
+	background-color:red;
+  overflow:hidden;
+  float:left;
+	}
+.chara_info{
+  margin-top:20px;
+	position:absolute;
+	width:550px;
+	height:200px;
+	margin-left:70px;
+	//background-color:red;
+	float:left;
+	}
+.chara_info p{
+	font-family:Microsoft YaHei;
+	font-size:18px;
+	margin-top:5px;
+	}
+#p2{
+	font-family:Microsoft YaHei;
+	font-size:15px;
+	color:gray;
+	margin-top:1px;
+	}
+.marrk{
+	width:50px;
+	height:50px;
+	//background-color:gray;
+	margin-left:475px;
+	margin-top:-65px;
+	float:left;
+	}
+.marrk a{
+	font-family:Arial;
+	display:block;
+	margin-top:-21px;
+	margin-left:30px;
+	color:gray;
+	//background-color:blue;
+  }
+.summary_text p{
+	width:100%;
+	margin-top:90px;
+	padding-left:25px;
+	padding-bottom:25px;
+	font-family:Microsoft YaHei;
+	//background-color:red;
+	}
+textarea{
+	height:110px;
+  width:580px;;
+  border-radius:2px;
+  resize:none;
+  margin-left:-40px;
+	font-family:Microsoft YaHei;
+	font-size:16px;
+	padding-left:10px;
+	padding-top:10px;
+	color:gray;
+	}
+.sum_input{
+	margin-left:35px;
+	font-family:Microsoft YaHei;
+	}
+.submit_bt{
+	border:1px solid #F84E4E;
+	width:98px;
+	height:36px;
+	font-size:18px;
+	font-weight:solid;
+	font-family:Microsoft YaHei;
+	text-align:center;
+	line-height:35px;
+	color:#F84E4E;
+	margin-top:-35px;
+	margin-left:450px;
+	margin-bottom:100px;
+	float:left;
+	}
+.join_sum{
+	width:150px;
+	height:36px;
+	font-size:18px;
+	font-weight:solid;
+	font-family:Microsoft YaHei;
+	text-align:center;
+	line-height:35px;
+	color:black;
+	margin-top:25px;
+	margin-left:-55px;
+	float:left;
+	}
+.submit_bt:hover{
+	color:white;
+	border:1px solid white;
+	background-color:#F84E4E;
+	}
+	
+
+
+/* 右侧内容 */
+.right_content{
+	width:532px;
+	height:100%;
+	//background-color:blue;
+	//border:1px solid red;
+	//margin-left:755px;
+  margin-top:53px;
+  float:left;
+	}
+.ddcode{
+	width:200px;
+	height:300px;
+	margin-top:10%;
+	margin-left:65%;
+	position: fixed;
+  left:50px;
+  top: 50px;
+	}
+
+
+
+
+/*其他设置*/
+.as:link {color: #F84E4E; text-decoration: none} /* 未访问的链接 */
+.as:visited {color: #F84E4E; text-decoration: none} /* 已访问的链接 */
+.as:hover {color: #F84E4E; text-decoration: none} /* 鼠标移动到链接上 */
+.as:active {color: #F84E4E; text-decoration: none} /* 激活链接时 */
+.show_pic{
+	width:100%;
+	height:100%;
+	
+	}
+.show_pic2{
+	width:100%;
+	height:100%;
+	}
+.show_pic3{
+	width:50%;
+	height:50%;
+	margin-top:10px;
+	}
+

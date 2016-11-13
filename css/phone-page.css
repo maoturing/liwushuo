@@ -1,0 +1,36 @@
+
+.pic{
+/* 	width:100%;
+	height:400px; */
+}
+.phone1 .download{
+	width:195px;
+	height:200px;
+	float:left;
+	position:absolute;
+	margin-left:650px;
+	top:50%;
+}
+.download .iphone{
+	width:195px;
+	height:53px;
+	border-radius:8px;
+	background-color:#34B2FC;
+	margin-bottom:20px;
+}
+.download .android{
+	width:195px;
+	height:53px;
+	border-radius:8px;
+	background-color:#60C33A;
+}
+
+/* "下载"的字体 */
+.download font{
+	font-family:"Microsoft YaHei";
+	font-size:16px;
+	line-height:1.5;
+	vertical-align:center;
+	color:white;
+}
+
